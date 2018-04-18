@@ -1,0 +1,15 @@
+Test suite hw2-test: RUNNING...
+123
+  Eval Test
+    expr tests...
+      big expr:         OK
+      dbz expr:         OK
+      power error expr: OK
+    bin tests...
+      bin:              OK
+    stringSum tests...
+      stringSum:        OK
+
+All 5 tests passed (0.00s)
+Test suite hw2-test: PASS
+Test suite logged to: dist/test/hw2-0.1.0.0-hw2-test.log

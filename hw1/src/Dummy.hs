@@ -5,7 +5,6 @@ module Dummy where
 import Data.List (sort, words)
 import System.Random (newStdGen, randomRs)
 import Data.Monoid (Monoid)
-import Data.Semigroup
 
 -- Block 1
 
@@ -85,11 +84,12 @@ daysToParty :: Day -> Int
 daysToParty = countDays 0
   where
     countDays acc Fri = acc
-countDays acc d = countDays (acc + 1) (nextDay d)
+    countDays acc d = countDays (acc + 1) (nextDay d)
 
 testNextDay :: Bool
-testNextDay = nextDay Sun == Mon && nextDay Fri == Sat && nextDay Sat ==O Sun
+testNextDay = nextDay Sun == Mon && nextDay Fri == Sat && nextDay Sat == Sun
 
+testAfterDays :: Bool
 testAfterDays =
     let day = Mon in
     let x = 6 in
