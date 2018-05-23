@@ -21,7 +21,7 @@ library
   build-depends:       base
                      , containers
                      , mtl
-                     , megaparsec == 6.2.0
+                     , megaparsec == 6.4.1
                      , transformers
                      , bytestring
                      , utf8-string
@@ -35,7 +35,7 @@ executable hw3
                      , hw3
                      , containers
                      , mtl
-                     , megaparsec == 6.2.0
+                     , megaparsec == 6.4.1
                      , transformers
                      , bytestring
                      , utf8-string
