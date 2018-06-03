@@ -90,4 +90,3 @@ genShowText ty = do
     let instanceType = appT (conT ''ShowText) (conT ty)
 
     sequence [instanceD (return []) instanceType [forShowText]]
-
